@@ -1,0 +1,164 @@
+body, html {
+margin: 0;
+height: 100%;
+width: 100%;
+}
+.wrap {
+perspective: 800px;
+perspective-origin: 50% 50%;
+height: 100%;
+}
+.pages {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transform-origin: 0 0;
+}
+.pages > div {
+position: absolute;
+}
+.page-main {
+height: 100%;
+margin-left: 96px;
+}
+.page-main-wrap {
+height: 100%;
+}
+.page-main-wrap > div {
+height: 100%;
+}
+.page-main-1 {
+height: 100%;
+}
+.page-main-1 > div {
+background-color: #2ecc71;
+}
+.page-main-2 {
+height: 100%;
+}
+.page-main-2 > div {
+background-color: #9b59b6;
+}
+.page-main-3 {
+height: 100%;
+}
+.page-main-3 > div {
+background-color: #34495e;
+}
+.page-left {
+margin-top: 10%;
+}
+.page-bottom {
+position: absolute;
+top: 95%;
+width: 100%;
+height: 128px;
+}
+.page-bottom div {
+padding-top: 2.5%;
+font-size: 1.25em;
+text-shadow: 1px 1px 2px black;
+color: #dddddd;
+text-align: center;
+}
+.page-main-inner {
+height: 100%;
+border-radius: 16px;
+color: white;
+text-shadow: 0px 1px black;
+padding: 15px;
+padding-bottom: 0px;
+margin: 15px;
+box-shadow: 0 0 16px #95a5a6;
+overflow: auto;
+}
+@keyframes tilt-right {
+from { transform: rotateZ(0deg); }
+to { transform: rotateZ(-18deg); }
+}
+@keyframes tilt-back {
+from { transform: rotateZ(-18deg); }
+to { transform: rotateZ(0deg); }
+}
+@keyframes slide-left {
+from { margin-left: 0px; }
+to { margin-left: -2625px; }
+}
+.menu-div {
+margin-top: 10%;
+margin-left: -96px;
+}
+.menu-ul {
+width: 128px;
+margin: 0;
+padding: 0;
+
+}
+.menu-ul li {
+list-style-type: none;
+width: 128px;
+height: 48px;
+}
+.menu-ul li div {
+width: 128px;
+}
+.menu-ul li div.li-left {
+width: 96px;
+float: left;
+margin-left: -10px;
+padding-top: 16px;
+text-align: right;
+font-size: 12px;
+color: white;
+}
+.menu-ul li div.li-right {
+padding: 10px 20px;
+text-align: left;
+}
+.menu-ul li div.li-right svg {
+margin-left: 32px;
+}
+.icon {
+display: inline-block;
+color: white;
+width: 1em;
+height: 1em;
+fill: currentColor;
+}
+.icon-style {
+font-size: 24px;
+}
+.footer {
+font-family: courier;
+font-size: 12px;
+text-align: center;
+vertical-align: middle;
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 16px;
+background-color: #2c3e50;
+color: white;
+box-shadow: 0 0 16px #95a5a6;
+}
+.menu-ul li a:hover svg {
+color: orange;
+}
+.box {
+border-radius: 8px;
+background-color: #2c3e50;
+box-shadow: 0 0 8px rgba(255,255,255,0.6);
+width: 26%;
+height: 100px;
+float: left;
+margin-left: 2%;
+padding: 10px;
+}
+p {
+text-indent: 16px;
+}
+
+#btn-menu-li {
+display: none;
+}
